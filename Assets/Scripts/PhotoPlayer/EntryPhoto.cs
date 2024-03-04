@@ -6,15 +6,17 @@ public class EntryPhoto : MonoBehaviour {
     [SerializeField] private ARContent arContent;
     [SerializeField] private FinderTarget finderTarget; 
     [SerializeField] private Poses poses;
-    [SerializeField] private Player player;
+    [SerializeField] private Avatars avatars;
     
     private void Awake() { 
        Screen.sleepTimeout = SleepTimeout.NeverSleep;
        main.CreateView();
        main.Initialize();
        arContent.CreateView();
-       player.CreateViewClosed();
-       player.Initialize();
+       
+       avatars.CreateViewClosed();
+       avatars.Initialize();
+       
        poses.CreateViewClosed();
        poses.Initialize();
        
@@ -27,8 +29,8 @@ public class EntryPhoto : MonoBehaviour {
     }
 
     private void SetPositionObject(Vector3 position) {
-        player.SetPositionPlayer(position);
-        player.Open();
+        avatars.SetPositionPlayer(position);
+        avatars.Open();
         
         arContent.DisableARPlaneManager();
         arContent.DisableARRayCastManager();
@@ -41,10 +43,10 @@ public class EntryPhoto : MonoBehaviour {
     }
 
     private void Subscribe() {
-        poses.IdleEvent += player.Idle;
-        poses.KickBallEvent += player.KickBall;
-        poses.FingerUpEvent += player.FingerInUp;
-        poses.LegOnBallEvent += player.LegInBall;
+        poses.IdleEvent += avatars.Idle;
+        poses.KickBallEvent += avatars.KickBall;
+        poses.BallIdleEvent += avatars.BallIdle;
+        poses.BallWaitEvent += avatars.BallWaitWaiting;
 
         finderTarget.SetPositionEvent += SetPositionObject;
     }  
@@ -52,16 +54,13 @@ public class EntryPhoto : MonoBehaviour {
     private void UnSubscribe() {
         main.UnSubscribe();
         poses.UnSubscribe();
-        poses.IdleEvent -= player.Idle;
-        poses.KickBallEvent -= player.KickBall;
-        poses.FingerUpEvent -= player.FingerInUp;
-        poses.LegOnBallEvent -= player.LegInBall;
+        
+        poses.IdleEvent -= avatars.Idle;
+        poses.KickBallEvent -= avatars.KickBall;
+        poses.BallIdleEvent -= avatars.BallIdle;
+        poses.BallWaitEvent -= avatars.BallWaitWaiting;
         
         finderTarget.UnSubscribe();
         finderTarget.SetPositionEvent -= SetPositionObject;
     }
-
-
-    
-    
 }

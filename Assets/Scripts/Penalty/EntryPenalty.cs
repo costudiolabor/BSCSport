@@ -6,9 +6,9 @@ using UnityEngine.XR.ARFoundation;
 public class EntryPenalty : MonoBehaviour {
     [SerializeField] private Main main;
     [SerializeField] private ARContent arContent;
-    [SerializeField] private SpawnerBall spawnerBall;
+    [SerializeField] private FinderTarget finderTarget;
     [SerializeField] private Gate gate;
-    //[SerializeField] private FinderTarget finderTarget;
+    [SerializeField] private SpawnerBall spawnerBall;
     
     [SerializeField] private float timeSpawn = 3.0f;
     private Kicker kicker = new Kicker();
@@ -16,17 +16,30 @@ public class EntryPenalty : MonoBehaviour {
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
         main.CreateView();
         main.Initialize();
+        
         arContent.CreateView();
-        //gate.CreateViewClosed();
-        gate.CreateView();
+        ARRaycastManager arRaycastManager = arContent.GetARRaycastManager();
+        
+        finderTarget.CreateView();
+        finderTarget.SetRayCastManager(arRaycastManager);
+        finderTarget.Initialize();
+        
+        gate.CreateViewClosed();
+        
         kicker.Initialize();
-        //spawnerBall.GetBall();
+        spawnerBall.GetBall();
         Subscribe();
     }
 
     private void SetPositionObject(Vector3 position) {
+        
+        gate.Open();
+        gate.SetPositionObject(position);
+        
         arContent.DisableARPlaneManager();
         arContent.DisableARRayCastManager();
+        finderTarget.Close();
+        spawnerBall.GetBall();
     }
     
     private void OnUpButton(Vector2 direction, float distance) {
@@ -35,16 +48,19 @@ public class EntryPenalty : MonoBehaviour {
     }
     
     private IEnumerator TimerSpawn() {
-        yield return new WaitForSeconds(timeSpawn);
-        spawnerBall.GetBall();
-    }
+         yield return new WaitForSeconds(timeSpawn);
+         spawnerBall.GetBall();
+     }
 
     private void Subscribe() {
         kicker.UpButtonEvent += OnUpButton;
+        
+        finderTarget.SetPositionEvent += SetPositionObject;
     }  
     
     private void UnSubscribe() {
         main.UnSubscribe();
+        finderTarget.SetPositionEvent -= SetPositionObject;
         kicker.UpButtonEvent -= OnUpButton;
         kicker.UnSubscribe();
     }

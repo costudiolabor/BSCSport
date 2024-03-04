@@ -29,8 +29,13 @@ public class FinderTargetView : View {
         if (hits.Count > 0) {
             planeMarkerPrefab.transform.position = hits[0].pose.position;
             planeMarkerPrefab.SetActive(true);
+
+            CheckTouch(hits.ToArray());
         }
-       
+    }
+
+
+    private void CheckTouch(ARRaycastHit[] hits) {
         if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began) {
             SetPositionEvent?.Invoke(hits[0].pose.position);
         }

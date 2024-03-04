@@ -4,32 +4,34 @@ using UnityEngine.UI;
 
 public class PosesView : View {
     [SerializeField] private Button buttonIdle;
-    [SerializeField] private Button buttonFingerUp;
-    [SerializeField] private Button buttonLegOnBall;
     [SerializeField] private Button buttonKickBall;
+    [SerializeField] private Button buttonBallIdle;
+    [SerializeField] private Button buttonBallWaiting;
 
-    public event Action IdleEvent, KickBallEvent, FingerUpEvent, LegOnBallEvent;
+    public event Action IdleEvent, KickBallEvent, BallIdleEvent, BallWaitEvent;
     
     public void Initialize() {
         buttonIdle.onClick.AddListener(OnIdle);
-        buttonFingerUp.onClick.AddListener(OnFingerUp);
-        buttonLegOnBall.onClick.AddListener(OnLegOnBall);
         buttonKickBall.onClick.AddListener(OnKickBall);
-    }
-
-    private void OnKickBall() {
-        KickBallEvent?.Invoke();
-    }
-
-    private void OnLegOnBall() {
-        LegOnBallEvent?.Invoke();
-    }
-
-    private void OnFingerUp() {
-        FingerUpEvent?.Invoke();
+        buttonBallIdle.onClick.AddListener(OnBallIdle);
+        buttonBallWaiting.onClick.AddListener(OnBallWaiting);
     }
 
     private void OnIdle() {
         IdleEvent?.Invoke();
     }
+    
+    private void OnKickBall() {
+        KickBallEvent?.Invoke();
+    }
+
+    private void OnBallIdle() {
+        BallIdleEvent?.Invoke();
+    }
+
+    private void OnBallWaiting() {
+        BallWaitEvent?.Invoke();
+    }
+
+   
 }

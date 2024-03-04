@@ -3,13 +3,10 @@ using Unity.VisualScripting;
 
 [Serializable]
 public class Poses : ViewOperator<PosesView> {
-    public event Action IdleEvent, KickBallEvent, FingerUpEvent, LegOnBallEvent;
+    public event Action IdleEvent, KickBallEvent, BallIdleEvent, BallWaitEvent;
+    
     public void Initialize() {
         view.Initialize();
-        // view.IdleEvent += OnIdle;
-        // view.KickBallEvent += OnKickBall;
-        // view.LegOnBallEvent += OnLegOnBall;
-        // view.FingerUpEvent += OnFingerUp;
         Subscribe();
     }
     
@@ -21,12 +18,12 @@ public class Poses : ViewOperator<PosesView> {
         KickBallEvent?.Invoke();
     }
 
-    private void OnLegOnBall() {
-        LegOnBallEvent?.Invoke();
+    private void BallIdle() {
+        BallWaitEvent?.Invoke();
     }
 
-    private void OnFingerUp() {
-        FingerUpEvent?.Invoke();
+    private void BallWait() {
+        BallIdleEvent?.Invoke();
     }
 
     public void Open() => view.Open();
@@ -35,14 +32,14 @@ public class Poses : ViewOperator<PosesView> {
     private void Subscribe() {
         view.IdleEvent += OnIdle;
         view.KickBallEvent += OnKickBall;
-        view.LegOnBallEvent += OnLegOnBall;
-        view.FingerUpEvent += OnFingerUp;
+        view.BallIdleEvent += BallIdle;
+        view.BallWaitEvent += BallWait;
     }  
     
     public void UnSubscribe() {
         view.IdleEvent -= OnIdle;
         view.KickBallEvent -= OnKickBall;
-        view.LegOnBallEvent -= OnLegOnBall;
-        view.FingerUpEvent -= OnFingerUp;
+        view.BallIdleEvent -= BallIdle;
+        view.BallWaitEvent -= BallWait;
     }
 }
