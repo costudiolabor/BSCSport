@@ -1,16 +1,19 @@
 using System;
-using System.Collections.Generic;
 using UnityEngine;
 
 [Serializable]
 public class SpawnerBall {
-   [SerializeField] private Transform parentBall;
    [SerializeField] private Ball prefabBall;
+   private Transform _parentBall;
    private Factory _factory = new ();
 
+   public void SetParentBall(Transform parentBall) => this._parentBall = parentBall;
+   
    public Ball GetBall() {
-      Ball ball = _factory.Get(prefabBall, parentBall.position, parentBall.rotation);
-      ball.transform.SetParent(parentBall);
+      Ball ball = _factory.Get(prefabBall, _parentBall.position);
+      ball.transform.SetParent(_parentBall);
       return ball;
    }
+
+  
 }

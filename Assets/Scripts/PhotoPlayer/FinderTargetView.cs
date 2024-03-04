@@ -7,7 +7,6 @@ using UnityEngine.XR.ARSubsystems;
 public class FinderTargetView : View {
     [SerializeField] private GameObject planeMarkerPrefab;
     private ARRaycastManager _arRaycastManager;
-    private Vector2 _touchPosition;
     private bool _isInit;
     public event Action<Vector3> SetPositionEvent;
 
@@ -20,6 +19,10 @@ public class FinderTargetView : View {
 
     void Update() {
         ShowMarker();
+        
+        #if UNITY_EDITOR
+        SetPositionEvent?.Invoke(new Vector3(0, 0, 0));
+        #endif
     }
 
     void ShowMarker() {
@@ -27,17 +30,17 @@ public class FinderTargetView : View {
         List<ARRaycastHit> hits = new List<ARRaycastHit>();
         _arRaycastManager.Raycast(new Vector2(Screen.width / 2, Screen.height / 2), hits, TrackableType.Planes);
         if (hits.Count > 0) {
-            planeMarkerPrefab.transform.position = hits[0].pose.position;
+            Vector3 currentPosition = hits[0].pose.position;
+            planeMarkerPrefab.transform.position = currentPosition;
             planeMarkerPrefab.SetActive(true);
-
-            CheckTouch(hits.ToArray());
+            Debug.Log("planeMarker " + planeMarkerPrefab.transform.position);
+            CheckTouch(currentPosition);
         }
     }
 
-
-    private void CheckTouch(ARRaycastHit[] hits) {
+    private void CheckTouch(Vector3 position) {
         if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began) {
-            SetPositionEvent?.Invoke(hits[0].pose.position);
+            SetPositionEvent?.Invoke(position);
         }
     }
 }

@@ -8,13 +8,13 @@ public class Ball : MonoBehaviour {
     
     public void Kick(Vector2 direction, float power) {
         var speedBall = maxSpeedBall * power;
-        Vector3 directionBall = new Vector3(direction.x, transform.position.y, direction.y) +  transform.forward;;
+        var thisTransform = transform;
+        //Vector3 directionBall = new Vector3(direction.x, thisTransform.position.y, direction.y) +  thisTransform.forward;;
+        Vector3 directionBall = thisTransform.forward;;
         thisRigidbody.AddForce(directionBall * speedBall, ForceMode.Impulse);
         StartCoroutine(TimerLife());
     }
   
-    //private void OnEnable() { _coroutine = StartCoroutine(TimerLife()); }
-
     private IEnumerator TimerLife() {
         yield return new WaitForSeconds(timeLife);
         gameObject.SetActive(false);

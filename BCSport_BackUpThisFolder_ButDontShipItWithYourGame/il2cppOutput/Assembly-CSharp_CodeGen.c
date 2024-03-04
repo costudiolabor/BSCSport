@@ -188,298 +188,311 @@ extern void EntryPenalty_Awake_mA331BA1FDB9487D5FEC5C3E1B08E89161B99F19C (void);
 extern void EntryPenalty_SetPositionObject_m01EA5A7751650316BB75949436BE9439D9D4F6C0 (void);
 // 0x00000059 System.Void EntryPenalty::OnUpButton(UnityEngine.Vector2,System.Single)
 extern void EntryPenalty_OnUpButton_m111302C342E4D6ABA01A8227D2DF89904A8FD7D1 (void);
-// 0x0000005A System.Collections.IEnumerator EntryPenalty::TimerSpawn()
-extern void EntryPenalty_TimerSpawn_mB05436BA9FDDA473EB5865C83FC86CDB235D3965 (void);
-// 0x0000005B System.Void EntryPenalty::Subscribe()
+// 0x0000005A System.Void EntryPenalty::Subscribe()
 extern void EntryPenalty_Subscribe_mF77B366E29E7ADCB32CCD246902B31CAF1A8E7CB (void);
-// 0x0000005C System.Void EntryPenalty::UnSubscribe()
+// 0x0000005B System.Void EntryPenalty::UnSubscribe()
 extern void EntryPenalty_UnSubscribe_mF0CA685D10ECFA3ED436D98187F8FF1F2C9F397F (void);
-// 0x0000005D System.Void EntryPenalty::OnDestroy()
+// 0x0000005C System.Void EntryPenalty::OnDestroy()
 extern void EntryPenalty_OnDestroy_m445AF1C10BF4747DC45E3339DD3E4C1E827E8545 (void);
-// 0x0000005E System.Void EntryPenalty::.ctor()
+// 0x0000005D System.Void EntryPenalty::.ctor()
 extern void EntryPenalty__ctor_m1E41995097A702A6E774B289F7D4FC477F2D0DB3 (void);
-// 0x0000005F System.Void EntryPenalty/<TimerSpawn>d__10::.ctor(System.Int32)
-extern void U3CTimerSpawnU3Ed__10__ctor_mB8D168B5780357559847154A056376EFDDF67F6A (void);
-// 0x00000060 System.Void EntryPenalty/<TimerSpawn>d__10::System.IDisposable.Dispose()
-extern void U3CTimerSpawnU3Ed__10_System_IDisposable_Dispose_m25F9EFD7DF1D496FA66EE04A1947D177E30A6789 (void);
-// 0x00000061 System.Boolean EntryPenalty/<TimerSpawn>d__10::MoveNext()
-extern void U3CTimerSpawnU3Ed__10_MoveNext_m522025717A10ABDFA636CA112CE3FF26FC6720C2 (void);
-// 0x00000062 System.Object EntryPenalty/<TimerSpawn>d__10::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CTimerSpawnU3Ed__10_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m22F6578D0E4AEDBC961506584B3F9B820ACE3A47 (void);
-// 0x00000063 System.Void EntryPenalty/<TimerSpawn>d__10::System.Collections.IEnumerator.Reset()
-extern void U3CTimerSpawnU3Ed__10_System_Collections_IEnumerator_Reset_m095A4311FE5985E8EBD6714E287D8A47D3DC72A1 (void);
-// 0x00000064 System.Object EntryPenalty/<TimerSpawn>d__10::System.Collections.IEnumerator.get_Current()
-extern void U3CTimerSpawnU3Ed__10_System_Collections_IEnumerator_get_Current_mB6F166FED4AF9FDD0FF8B1A05364D8488FD0B496 (void);
-// 0x00000065 T Factory::Get(T,UnityEngine.Vector3,UnityEngine.Quaternion)
-// 0x00000066 System.Void Factory::.ctor()
+// 0x0000005E T Factory::Get(T,UnityEngine.Vector3,UnityEngine.Quaternion)
+// 0x0000005F T Factory::Get(T,UnityEngine.Vector3)
+// 0x00000060 System.Void Factory::.ctor()
 extern void Factory__ctor_m8A868830FC6D7FCB905746BFF6A02B86AD9DAB72 (void);
-// 0x00000067 System.Void Gate::Open()
+// 0x00000061 System.Void Gate::add_MoveKickEvent(System.Action`2<UnityEngine.Vector2,System.Single>)
+extern void Gate_add_MoveKickEvent_mD19D7593D4C99442717FCBAA3BC3E9F00CC97B85 (void);
+// 0x00000062 System.Void Gate::remove_MoveKickEvent(System.Action`2<UnityEngine.Vector2,System.Single>)
+extern void Gate_remove_MoveKickEvent_m74F50315067B95C22BD3E392C810F09D95487114 (void);
+// 0x00000063 System.Void Gate::Initialize()
+extern void Gate_Initialize_m18F92661CBE44FCB559F0F253D0E7F2DF750EC17 (void);
+// 0x00000064 System.Void Gate::Open()
 extern void Gate_Open_m8560EA456C23282665CF929CA02910F86D5EF4E0 (void);
-// 0x00000068 System.Void Gate::Close()
+// 0x00000065 System.Void Gate::SpawnBall()
+extern void Gate_SpawnBall_m5A6D93A80B428C4E10BF1006D06C447AA4A35FAD (void);
+// 0x00000066 System.Void Gate::Close()
 extern void Gate_Close_mD3E1D92903A0FBBB178B6E41C20EE54E09CC79C8 (void);
-// 0x00000069 System.Void Gate::SetPositionObject(UnityEngine.Vector3)
+// 0x00000067 System.Void Gate::SetPositionObject(UnityEngine.Vector3)
 extern void Gate_SetPositionObject_m837C43489A80E614C6EE0C1F21F52525281136CC (void);
-// 0x0000006A System.Void Gate::MoveKick(UnityEngine.Vector2,System.Single)
+// 0x00000068 System.Void Gate::MoveKick(UnityEngine.Vector2,System.Single)
 extern void Gate_MoveKick_mF3881AC4F500B94EBBFBA42867AE4D119FB17F54 (void);
+// 0x00000069 System.Void Gate::Subscribe()
+extern void Gate_Subscribe_mFE0BB07C80EA1730D2C97DBCEB8E3EB3B75957A4 (void);
+// 0x0000006A System.Void Gate::UnSubscribe()
+extern void Gate_UnSubscribe_m7F1563C30A4D529ADD42EA676BCF4175F8095C61 (void);
 // 0x0000006B System.Void Gate::.ctor()
 extern void Gate__ctor_mBB516EAB7D58B67AAF84182A16CE9B6E4057546C (void);
-// 0x0000006C System.Void GateView::MoveKick(UnityEngine.Vector2,System.Single)
+// 0x0000006C System.Void GateView::add_GetBallEvent(System.Action)
+extern void GateView_add_GetBallEvent_m0AE31E8FF82FEECF666FF062808681207256E538 (void);
+// 0x0000006D System.Void GateView::remove_GetBallEvent(System.Action)
+extern void GateView_remove_GetBallEvent_m8B838F6B34FC1FBB338D946011226601977DA04E (void);
+// 0x0000006E UnityEngine.Transform GateView::GetParentBall()
+extern void GateView_GetParentBall_mA64C5A76C56C9E11FD70ABCD7683AC74367865B7 (void);
+// 0x0000006F System.Void GateView::MoveKick(UnityEngine.Vector2,System.Single)
 extern void GateView_MoveKick_m8B11EEFF2EA24F5E62D4844B30D7E6BE47BEA80A (void);
-// 0x0000006D System.Void GateView::.ctor()
+// 0x00000070 System.Collections.IEnumerator GateView::TimerSpawn()
+extern void GateView_TimerSpawn_m4907ECFE904B14861BAE09A9243BE56864127692 (void);
+// 0x00000071 System.Void GateView::.ctor()
 extern void GateView__ctor_m06B1AF07332136D21FC6CE65CD8FCFE574584CA1 (void);
-// 0x0000006E System.Void Kicker::add_UpButtonEvent(System.Action`2<UnityEngine.Vector2,System.Single>)
+// 0x00000072 System.Void GateView/<TimerSpawn>d__8::.ctor(System.Int32)
+extern void U3CTimerSpawnU3Ed__8__ctor_m745EA1D38A4FA4C106A7092EE6940BAE070D7176 (void);
+// 0x00000073 System.Void GateView/<TimerSpawn>d__8::System.IDisposable.Dispose()
+extern void U3CTimerSpawnU3Ed__8_System_IDisposable_Dispose_mA1194395FD28B924DEA24DD48266FAF9569BC2D7 (void);
+// 0x00000074 System.Boolean GateView/<TimerSpawn>d__8::MoveNext()
+extern void U3CTimerSpawnU3Ed__8_MoveNext_m9665579A7C6BE4812039CA45C86C1CA763FC7A89 (void);
+// 0x00000075 System.Object GateView/<TimerSpawn>d__8::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CTimerSpawnU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m99149A08F5C34C29CF547E3F45C1C033B3CB06CB (void);
+// 0x00000076 System.Void GateView/<TimerSpawn>d__8::System.Collections.IEnumerator.Reset()
+extern void U3CTimerSpawnU3Ed__8_System_Collections_IEnumerator_Reset_m65648F07715074ADE8B47539B015F83754147C46 (void);
+// 0x00000077 System.Object GateView/<TimerSpawn>d__8::System.Collections.IEnumerator.get_Current()
+extern void U3CTimerSpawnU3Ed__8_System_Collections_IEnumerator_get_Current_mF938CFE70C20B6F0CDE46ED9385CEC7CFCC05F9D (void);
+// 0x00000078 System.Void Kicker::add_UpButtonEvent(System.Action`2<UnityEngine.Vector2,System.Single>)
 extern void Kicker_add_UpButtonEvent_m2E8515D4118B37CE8BDE952B07327E0B61D36180 (void);
-// 0x0000006F System.Void Kicker::remove_UpButtonEvent(System.Action`2<UnityEngine.Vector2,System.Single>)
+// 0x00000079 System.Void Kicker::remove_UpButtonEvent(System.Action`2<UnityEngine.Vector2,System.Single>)
 extern void Kicker_remove_UpButtonEvent_m92319B8EF62B7759411BEFFADA1228F8A37C0141 (void);
-// 0x00000070 System.Void Kicker::add_DownButtonEvent(System.Action)
-extern void Kicker_add_DownButtonEvent_m7F71D5C936B6791AFE1CBE2B4D97A95CA7E0C55C (void);
-// 0x00000071 System.Void Kicker::remove_DownButtonEvent(System.Action)
-extern void Kicker_remove_DownButtonEvent_m849007D332025678402CDAF5AE89DCAA56F26C59 (void);
-// 0x00000072 System.Void Kicker::add_MoveMouseEvent(System.Action`1<UnityEngine.Vector2>)
-extern void Kicker_add_MoveMouseEvent_mFCFEBDF51090DD0F6C47A7E527244B65CF645D31 (void);
-// 0x00000073 System.Void Kicker::remove_MoveMouseEvent(System.Action`1<UnityEngine.Vector2>)
-extern void Kicker_remove_MoveMouseEvent_mAB8311E5F72433FC9F7A2E08233D1B3618FFD12E (void);
-// 0x00000074 System.Void Kicker::Initialize()
+// 0x0000007A System.Void Kicker::Initialize()
 extern void Kicker_Initialize_m8E3E08608F3F613A5B301FAA46CE9319AA11A213 (void);
-// 0x00000075 System.Void Kicker::OnUpButton()
+// 0x0000007B System.Void Kicker::OnUpButton()
 extern void Kicker_OnUpButton_m64840AAD2DB9B9132C331E4B8C7B8CAA3DEFAC53 (void);
-// 0x00000076 System.Void Kicker::MoveMouse(UnityEngine.Vector2)
+// 0x0000007C System.Void Kicker::MoveMouse(UnityEngine.Vector2)
 extern void Kicker_MoveMouse_m6B7D98FE6D9020119D9B03A9AA5856DFF11ABBE5 (void);
-// 0x00000077 System.Void Kicker::OnDownButton()
+// 0x0000007D System.Void Kicker::OnDownButton()
 extern void Kicker_OnDownButton_m59870F01454E7C998F277D4EC26430FDA1B17AB8 (void);
-// 0x00000078 System.Void Kicker::Subscribe()
+// 0x0000007E System.Void Kicker::Subscribe()
 extern void Kicker_Subscribe_m4764CD1B22B0124147AD01CCD1D63CB5B3871F89 (void);
-// 0x00000079 System.Void Kicker::UnSubscribe()
+// 0x0000007F System.Void Kicker::UnSubscribe()
 extern void Kicker_UnSubscribe_mAA4EE66C75F79E5AF67572D737D5A267ADA0A0BD (void);
-// 0x0000007A System.Void Kicker::.ctor()
+// 0x00000080 System.Void Kicker::.ctor()
 extern void Kicker__ctor_mC091E8FCF5C521DAFDDCDA96C02A46F957453BB7 (void);
-// 0x0000007B System.Void PlayerPenalty::MoveKick(UnityEngine.Vector2,System.Single)
+// 0x00000081 System.Void PlayerPenalty::MoveKick(UnityEngine.Vector2,System.Single)
 extern void PlayerPenalty_MoveKick_m70837C1B9E8886D2D845AB7E7B0B9C7D6090A51C (void);
-// 0x0000007C System.Void PlayerPenalty::.ctor()
+// 0x00000082 System.Void PlayerPenalty::.ctor()
 extern void PlayerPenalty__ctor_m05C148ED9D9E7C8D6FC000032738E12E888CDCC2 (void);
-// 0x0000007D Ball SpawnerBall::GetBall()
+// 0x00000083 System.Void SpawnerBall::SetParentBall(UnityEngine.Transform)
+extern void SpawnerBall_SetParentBall_m5184D65976DE9A6A4330F945F46386249A2C50B6 (void);
+// 0x00000084 Ball SpawnerBall::GetBall()
 extern void SpawnerBall_GetBall_m299390D2FC823B74356106045DBA8B0816088C95 (void);
-// 0x0000007E System.Void SpawnerBall::.ctor()
+// 0x00000085 System.Void SpawnerBall::.ctor()
 extern void SpawnerBall__ctor_m5EDCFD9610DCD78677463D6B2CE820A8099FF131 (void);
-// 0x0000007F UnityEngine.XR.ARFoundation.ARRaycastManager ARContent::GetARRaycastManager()
+// 0x00000086 UnityEngine.XR.ARFoundation.ARRaycastManager ARContent::GetARRaycastManager()
 extern void ARContent_GetARRaycastManager_m9CE2049015051FF4DFC490F411C8B981B9D2147D (void);
-// 0x00000080 System.Void ARContent::DisableARRayCastManager()
+// 0x00000087 System.Void ARContent::DisableARRayCastManager()
 extern void ARContent_DisableARRayCastManager_m44A27B40413A7AA002D68988D46DDF2112837B10 (void);
-// 0x00000081 System.Void ARContent::DisableARPlaneManager()
+// 0x00000088 System.Void ARContent::DisableARPlaneManager()
 extern void ARContent_DisableARPlaneManager_m618B2DABFBB1C621116E706DBA34A1970FC70A82 (void);
-// 0x00000082 System.Void ARContent::.ctor()
+// 0x00000089 System.Void ARContent::.ctor()
 extern void ARContent__ctor_m978991BDFFF4E5688A4E0101E10E47AC1500D1A3 (void);
-// 0x00000083 UnityEngine.XR.ARFoundation.ARRaycastManager ARContentView::GetARRaycastManager()
+// 0x0000008A UnityEngine.XR.ARFoundation.ARRaycastManager ARContentView::GetARRaycastManager()
 extern void ARContentView_GetARRaycastManager_mD7B7A4D7ED0D8B25E9EB9E35567BB5CA6F210D6D (void);
-// 0x00000084 System.Void ARContentView::DisableARPlaneManager()
+// 0x0000008B System.Void ARContentView::DisableARPlaneManager()
 extern void ARContentView_DisableARPlaneManager_m3E4808EE82FB8642E14C1D6B1A697C031D2EA55D (void);
-// 0x00000085 System.Void ARContentView::DisableARRayCastManager()
+// 0x0000008C System.Void ARContentView::DisableARRayCastManager()
 extern void ARContentView_DisableARRayCastManager_mB3DF30BF7889668AA07CCAC8E873D30489821559 (void);
-// 0x00000086 System.Void ARContentView::.ctor()
+// 0x0000008D System.Void ARContentView::.ctor()
 extern void ARContentView__ctor_m5B75D14D9EA3C9D9A4CDE7756A86A76B8A7283D8 (void);
-// 0x00000087 System.Void ARDebugLog::Awake()
+// 0x0000008E System.Void ARDebugLog::Awake()
 extern void ARDebugLog_Awake_m7843379F97E3DADF793E625BDA8F9BA2FEE5A8E3 (void);
-// 0x00000088 System.Void ARDebugLog::OnEnable()
+// 0x0000008F System.Void ARDebugLog::OnEnable()
 extern void ARDebugLog_OnEnable_m4E1A08D1E2FB39A680F5920E59943A142F0EA77E (void);
-// 0x00000089 System.Void ARDebugLog::OnDisable()
+// 0x00000090 System.Void ARDebugLog::OnDisable()
 extern void ARDebugLog_OnDisable_m1B3E2B5B1EE906F75DBEFA9379A58C99EF9D9126 (void);
-// 0x0000008A System.Void ARDebugLog::HandleLog(System.String,System.String,UnityEngine.LogType)
+// 0x00000091 System.Void ARDebugLog::HandleLog(System.String,System.String,UnityEngine.LogType)
 extern void ARDebugLog_HandleLog_m6CBB560BB82561215AA143C95E33C35666423087 (void);
-// 0x0000008B System.Void ARDebugLog::OnGUI()
+// 0x00000092 System.Void ARDebugLog::OnGUI()
 extern void ARDebugLog_OnGUI_m020A3571AF1AC46D2085C97117AFE2FBFFEFCD0E (void);
-// 0x0000008C System.Void ARDebugLog::.ctor()
+// 0x00000093 System.Void ARDebugLog::.ctor()
 extern void ARDebugLog__ctor_m42F298C117661CEDE360FEEB0336F4209924C632 (void);
-// 0x0000008D System.Void Avatars::Open()
+// 0x00000094 System.Void Avatars::Open()
 extern void Avatars_Open_m320C5E517F0EB2C3DEE3D83593FAF8779F0109BA (void);
-// 0x0000008E System.Void Avatars::Close()
+// 0x00000095 System.Void Avatars::Close()
 extern void Avatars_Close_mFEA53C7D5970B98BA43D9A095D6EAC01483A9BEB (void);
-// 0x0000008F System.Void Avatars::Initialize()
+// 0x00000096 System.Void Avatars::Initialize()
 extern void Avatars_Initialize_m038BC410AE88D63C306F9FBC56D9116FE8F14FF9 (void);
-// 0x00000090 System.Void Avatars::SetPositionPlayer(UnityEngine.Vector3)
+// 0x00000097 System.Void Avatars::SetPositionPlayer(UnityEngine.Vector3)
 extern void Avatars_SetPositionPlayer_mD43F1B8B8B3F201BE5025D8F7EFFFA49BAE4156C (void);
-// 0x00000091 System.Void Avatars::Idle()
+// 0x00000098 System.Void Avatars::Idle()
 extern void Avatars_Idle_m335BB404246A30025BBA5B788C48F8B117609F81 (void);
-// 0x00000092 System.Void Avatars::KickBall()
+// 0x00000099 System.Void Avatars::KickBall()
 extern void Avatars_KickBall_m42BDDFCE9890FE654FF164F6BB649C2530EB4CC3 (void);
-// 0x00000093 System.Void Avatars::BallIdle()
+// 0x0000009A System.Void Avatars::BallIdle()
 extern void Avatars_BallIdle_mFCCF68FA2D4EEA0D2EDD12DDCFECE910549DEBA1 (void);
-// 0x00000094 System.Void Avatars::BallWaitWaiting()
+// 0x0000009B System.Void Avatars::BallWaitWaiting()
 extern void Avatars_BallWaitWaiting_m78433D375AF6F082D6A8025EFE6187FF156730A9 (void);
-// 0x00000095 System.Void Avatars::.ctor()
+// 0x0000009C System.Void Avatars::.ctor()
 extern void Avatars__ctor_mBF5B413AA97C925644FCC42894868C527FEE4F86 (void);
-// 0x00000096 System.Void AvatarsView::Initialize()
+// 0x0000009D System.Void AvatarsView::Initialize()
 extern void AvatarsView_Initialize_m94E69394862B967009D7EF55BD7DF5D56093BC7B (void);
-// 0x00000097 System.Void AvatarsView::HideAvatars()
+// 0x0000009E System.Void AvatarsView::HideAvatars()
 extern void AvatarsView_HideAvatars_m775E5C25EB08AC9BB28955835FF46C5613C879F4 (void);
-// 0x00000098 System.Void AvatarsView::Idle()
+// 0x0000009F System.Void AvatarsView::Idle()
 extern void AvatarsView_Idle_m869BCF160318813A75EB6FB2600B12EFA3824034 (void);
-// 0x00000099 System.Void AvatarsView::KickBall()
+// 0x000000A0 System.Void AvatarsView::KickBall()
 extern void AvatarsView_KickBall_mA32C508B67EEDA9DFD5A6A1821276143A1934DCA (void);
-// 0x0000009A System.Void AvatarsView::BallIdle()
+// 0x000000A1 System.Void AvatarsView::BallIdle()
 extern void AvatarsView_BallIdle_mAA3BBE19ACF5F624B5AA8E07C95E027EA4466D9B (void);
-// 0x0000009B System.Void AvatarsView::BallWaiting()
+// 0x000000A2 System.Void AvatarsView::BallWaiting()
 extern void AvatarsView_BallWaiting_m2F604B0F02E926CB20EDABDDEBC83590A5AC7A94 (void);
-// 0x0000009C System.Void AvatarsView::SetActiveObject(System.Int32)
+// 0x000000A3 System.Void AvatarsView::SetActiveObject(System.Int32)
 extern void AvatarsView_SetActiveObject_mE8E7BF47F8739DEA6CF3634D164A70D7EC02CDB4 (void);
-// 0x0000009D System.Void AvatarsView::.ctor()
+// 0x000000A4 System.Void AvatarsView::.ctor()
 extern void AvatarsView__ctor_mFF111207A8ECB966DBD711E8BE3943C8F3184197 (void);
-// 0x0000009E System.Void EntryPhoto::Awake()
+// 0x000000A5 System.Void EntryPhoto::Awake()
 extern void EntryPhoto_Awake_m386112D624D50C2E5E37E4809862D75E3CF09C22 (void);
-// 0x0000009F System.Void EntryPhoto::SetPositionObject(UnityEngine.Vector3)
+// 0x000000A6 System.Void EntryPhoto::SetPositionObject(UnityEngine.Vector3)
 extern void EntryPhoto_SetPositionObject_m49E7C136711E32C1DB3E77F979507EF161FB47C3 (void);
-// 0x000000A0 System.Void EntryPhoto::OnDestroy()
+// 0x000000A7 System.Void EntryPhoto::OnDestroy()
 extern void EntryPhoto_OnDestroy_mDC9EDF1935499F43C6E2DA2F66D66C54F84353C1 (void);
-// 0x000000A1 System.Void EntryPhoto::Subscribe()
+// 0x000000A8 System.Void EntryPhoto::Subscribe()
 extern void EntryPhoto_Subscribe_m323FDDDBE0CBCA6150B3C1001C4FB00B0C8CA9AE (void);
-// 0x000000A2 System.Void EntryPhoto::UnSubscribe()
+// 0x000000A9 System.Void EntryPhoto::UnSubscribe()
 extern void EntryPhoto_UnSubscribe_mAEDD65201C36199DB7B954CE6635022D420DDC0D (void);
-// 0x000000A3 System.Void EntryPhoto::.ctor()
+// 0x000000AA System.Void EntryPhoto::.ctor()
 extern void EntryPhoto__ctor_m891254236ECF13FF84A3FF5E79DA006567CCF454 (void);
-// 0x000000A4 System.Void FinderTarget::add_SetPositionEvent(System.Action`1<UnityEngine.Vector3>)
+// 0x000000AB System.Void FinderTarget::add_SetPositionEvent(System.Action`1<UnityEngine.Vector3>)
 extern void FinderTarget_add_SetPositionEvent_m291D55D82A39C6745D4174E568E905BF07A6606B (void);
-// 0x000000A5 System.Void FinderTarget::remove_SetPositionEvent(System.Action`1<UnityEngine.Vector3>)
+// 0x000000AC System.Void FinderTarget::remove_SetPositionEvent(System.Action`1<UnityEngine.Vector3>)
 extern void FinderTarget_remove_SetPositionEvent_m25628A98A197C0DEC82C3519072A5B803AE3A98B (void);
-// 0x000000A6 System.Void FinderTarget::SetRayCastManager(UnityEngine.XR.ARFoundation.ARRaycastManager)
+// 0x000000AD System.Void FinderTarget::SetRayCastManager(UnityEngine.XR.ARFoundation.ARRaycastManager)
 extern void FinderTarget_SetRayCastManager_mB43F72A1410E34005D58FB00D36692958959426E (void);
-// 0x000000A7 System.Void FinderTarget::Initialize()
+// 0x000000AE System.Void FinderTarget::Initialize()
 extern void FinderTarget_Initialize_m508F7BCD1A9BEE374BDA0EE34710E365F4C31A25 (void);
-// 0x000000A8 System.Void FinderTarget::Close()
+// 0x000000AF System.Void FinderTarget::Close()
 extern void FinderTarget_Close_m9D2DA9DB2EFF4068570C95A0021C42D4DC5B76E9 (void);
-// 0x000000A9 System.Void FinderTarget::OnPosition(UnityEngine.Vector3)
+// 0x000000B0 System.Void FinderTarget::OnPosition(UnityEngine.Vector3)
 extern void FinderTarget_OnPosition_m5266BBCC9017330D77CBFDCC5F51F02A5AD9ACDC (void);
-// 0x000000AA System.Void FinderTarget::Subscribe()
+// 0x000000B1 System.Void FinderTarget::Subscribe()
 extern void FinderTarget_Subscribe_m440EFAD6EF613D99F13696CC036EC13414CD279F (void);
-// 0x000000AB System.Void FinderTarget::UnSubscribe()
+// 0x000000B2 System.Void FinderTarget::UnSubscribe()
 extern void FinderTarget_UnSubscribe_mB88F4D40904015D83DFB85A83B0BBA6C9A09360E (void);
-// 0x000000AC System.Void FinderTarget::.ctor()
+// 0x000000B3 System.Void FinderTarget::.ctor()
 extern void FinderTarget__ctor_mA6B427C012450A75067A84AD78CE707CEA04AAD5 (void);
-// 0x000000AD System.Void FinderTargetView::add_SetPositionEvent(System.Action`1<UnityEngine.Vector3>)
+// 0x000000B4 System.Void FinderTargetView::add_SetPositionEvent(System.Action`1<UnityEngine.Vector3>)
 extern void FinderTargetView_add_SetPositionEvent_mF0B7525AE9AF597601941D06E2BEC42B5D75291A (void);
-// 0x000000AE System.Void FinderTargetView::remove_SetPositionEvent(System.Action`1<UnityEngine.Vector3>)
+// 0x000000B5 System.Void FinderTargetView::remove_SetPositionEvent(System.Action`1<UnityEngine.Vector3>)
 extern void FinderTargetView_remove_SetPositionEvent_mBB7A19877424C00C4D46F1C4A24A63058ABBF34B (void);
-// 0x000000AF System.Void FinderTargetView::SetRayCastManager(UnityEngine.XR.ARFoundation.ARRaycastManager)
+// 0x000000B6 System.Void FinderTargetView::SetRayCastManager(UnityEngine.XR.ARFoundation.ARRaycastManager)
 extern void FinderTargetView_SetRayCastManager_m155EA99B4B557FCBBA26CA366D741921FB04571E (void);
-// 0x000000B0 System.Void FinderTargetView::Initialize()
+// 0x000000B7 System.Void FinderTargetView::Initialize()
 extern void FinderTargetView_Initialize_m1812BEB1B12CB4F4020F2861380719EF7FF1473B (void);
-// 0x000000B1 System.Void FinderTargetView::Update()
+// 0x000000B8 System.Void FinderTargetView::Update()
 extern void FinderTargetView_Update_m7A53B2DA4F5ECB8FD2F04F819C084FD46EDB627F (void);
-// 0x000000B2 System.Void FinderTargetView::ShowMarker()
+// 0x000000B9 System.Void FinderTargetView::ShowMarker()
 extern void FinderTargetView_ShowMarker_mC05BC9BD38113AF82241CEDB02452818D7031E41 (void);
-// 0x000000B3 System.Void FinderTargetView::CheckTouch(UnityEngine.XR.ARFoundation.ARRaycastHit[])
-extern void FinderTargetView_CheckTouch_m8CB7CA7EC53670FF5F5819B2888F5B88043027F1 (void);
-// 0x000000B4 System.Void FinderTargetView::.ctor()
+// 0x000000BA System.Void FinderTargetView::CheckTouch(UnityEngine.Vector3)
+extern void FinderTargetView_CheckTouch_mC6C962AC4E9CC293C3C80E0B62151A9029CD238D (void);
+// 0x000000BB System.Void FinderTargetView::.ctor()
 extern void FinderTargetView__ctor_mA5E60C95EABD4C42607D7061CFC373BCB3614C72 (void);
-// 0x000000B5 System.Void Player::Open()
+// 0x000000BC System.Void Player::Open()
 extern void Player_Open_m85788575E3B7F9DEEA40C7D3BC4EB01AE7C313BF (void);
-// 0x000000B6 System.Void Player::Close()
+// 0x000000BD System.Void Player::Close()
 extern void Player_Close_mDC429744B019DE65474083DA954EFB0A55ACFEBE (void);
-// 0x000000B7 System.Void Player::SetPositionPlayer(UnityEngine.Vector3)
+// 0x000000BE System.Void Player::SetPositionPlayer(UnityEngine.Vector3)
 extern void Player_SetPositionPlayer_m5847ADB9D60998987D9E95F3C52495FE12CA3E50 (void);
-// 0x000000B8 System.Void Player::Idle()
+// 0x000000BF System.Void Player::Idle()
 extern void Player_Idle_m0988E5C64DF7349539BA6F010964E717143DB999 (void);
-// 0x000000B9 System.Void Player::KickBall()
+// 0x000000C0 System.Void Player::KickBall()
 extern void Player_KickBall_m33973F3ED77855D28E35B99DC8D3D3551C5B4AE3 (void);
-// 0x000000BA System.Void Player::LegInBall()
+// 0x000000C1 System.Void Player::LegInBall()
 extern void Player_LegInBall_m841AD627B526AB7D268D509A69E9964FC2C16D31 (void);
-// 0x000000BB System.Void Player::FingerInUp()
+// 0x000000C2 System.Void Player::FingerInUp()
 extern void Player_FingerInUp_m3AC63456E974B51C51D14FC137ABA65A0084F942 (void);
-// 0x000000BC System.Void Player::Initialize()
+// 0x000000C3 System.Void Player::Initialize()
 extern void Player_Initialize_m9DF9F5885D1477AADA8BD81E08BDCD050147A3F4 (void);
-// 0x000000BD System.Void Player::.ctor()
+// 0x000000C4 System.Void Player::.ctor()
 extern void Player__ctor_m0A83E0706592FC871B0CF188B37AFC6649F3D85D (void);
-// 0x000000BE System.Void PlayerView::Idle()
+// 0x000000C5 System.Void PlayerView::Idle()
 extern void PlayerView_Idle_mC36984EE8D58DB4B862C8A9D9A3744EE74EB8039 (void);
-// 0x000000BF System.Void PlayerView::KickBall()
+// 0x000000C6 System.Void PlayerView::KickBall()
 extern void PlayerView_KickBall_m857BD7D9F61139BCC3572C3CA1B1B8513D3BE029 (void);
-// 0x000000C0 System.Void PlayerView::LegOnBall()
+// 0x000000C7 System.Void PlayerView::LegOnBall()
 extern void PlayerView_LegOnBall_mBC4D6261B4AE7FB1C80E5E89827FF2BABB48AC43 (void);
-// 0x000000C1 System.Void PlayerView::FingerInUp()
+// 0x000000C8 System.Void PlayerView::FingerInUp()
 extern void PlayerView_FingerInUp_m32E904B60EE323EAC949377A0233DC87135669A9 (void);
-// 0x000000C2 System.Void PlayerView::SetAnimator(System.String,System.Single)
+// 0x000000C9 System.Void PlayerView::SetAnimator(System.String,System.Single)
 extern void PlayerView_SetAnimator_m8120F3F46905AF4A6C0DE6577B0DCD7FEB10A0A6 (void);
-// 0x000000C3 System.Void PlayerView::.ctor()
+// 0x000000CA System.Void PlayerView::.ctor()
 extern void PlayerView__ctor_m55E6ABBE6C11BC883CFB7F8D3CFBF03341A3DCFB (void);
-// 0x000000C4 System.Void Poses::add_IdleEvent(System.Action)
+// 0x000000CB System.Void Poses::add_IdleEvent(System.Action)
 extern void Poses_add_IdleEvent_m16DAD853E161DE83E8EC1BD4F5DE5E311CB139EA (void);
-// 0x000000C5 System.Void Poses::remove_IdleEvent(System.Action)
+// 0x000000CC System.Void Poses::remove_IdleEvent(System.Action)
 extern void Poses_remove_IdleEvent_mD1DFEC0F5D38178B8CA7582E44F041B84599FEF0 (void);
-// 0x000000C6 System.Void Poses::add_KickBallEvent(System.Action)
+// 0x000000CD System.Void Poses::add_KickBallEvent(System.Action)
 extern void Poses_add_KickBallEvent_m75B51F9D86B57A9DEF9CA6E8DE636D5EFFD06014 (void);
-// 0x000000C7 System.Void Poses::remove_KickBallEvent(System.Action)
+// 0x000000CE System.Void Poses::remove_KickBallEvent(System.Action)
 extern void Poses_remove_KickBallEvent_m8DD26FBDEAB60A0F656E6B94F53967617A4A6F4B (void);
-// 0x000000C8 System.Void Poses::add_BallIdleEvent(System.Action)
+// 0x000000CF System.Void Poses::add_BallIdleEvent(System.Action)
 extern void Poses_add_BallIdleEvent_mFB3FA24BFD22B1BBC783981123DFB24D9E321A48 (void);
-// 0x000000C9 System.Void Poses::remove_BallIdleEvent(System.Action)
+// 0x000000D0 System.Void Poses::remove_BallIdleEvent(System.Action)
 extern void Poses_remove_BallIdleEvent_m93D572D058B339875826D51BAA240319F17D1D87 (void);
-// 0x000000CA System.Void Poses::add_BallWaitEvent(System.Action)
+// 0x000000D1 System.Void Poses::add_BallWaitEvent(System.Action)
 extern void Poses_add_BallWaitEvent_m9AA05FDA61075280E899E55D5A2FCA3F7B3F7AB5 (void);
-// 0x000000CB System.Void Poses::remove_BallWaitEvent(System.Action)
+// 0x000000D2 System.Void Poses::remove_BallWaitEvent(System.Action)
 extern void Poses_remove_BallWaitEvent_m2A3A6B0D2B5014764FE99A320451193005583AB1 (void);
-// 0x000000CC System.Void Poses::Initialize()
+// 0x000000D3 System.Void Poses::Initialize()
 extern void Poses_Initialize_m358F709BE5BF7B368DF43935DA6EFB6DCA98367E (void);
-// 0x000000CD System.Void Poses::OnIdle()
+// 0x000000D4 System.Void Poses::OnIdle()
 extern void Poses_OnIdle_mCEFAE0525423386D5C052E81B52B530F90094C07 (void);
-// 0x000000CE System.Void Poses::OnKickBall()
+// 0x000000D5 System.Void Poses::OnKickBall()
 extern void Poses_OnKickBall_mFD8968559BD3BE9C15C62ADBD58979C046F4C8FA (void);
-// 0x000000CF System.Void Poses::BallIdle()
+// 0x000000D6 System.Void Poses::BallIdle()
 extern void Poses_BallIdle_mEF12EDD6ED878C8DE66DD3B507F67FE4094ECC72 (void);
-// 0x000000D0 System.Void Poses::BallWait()
+// 0x000000D7 System.Void Poses::BallWait()
 extern void Poses_BallWait_mA5AA3F475C3C7C25F1B1C52488050E8D1E202DCA (void);
-// 0x000000D1 System.Void Poses::Open()
+// 0x000000D8 System.Void Poses::Open()
 extern void Poses_Open_mAA5004991059B4FBBC41C0A1D1BAC014A5FF3D33 (void);
-// 0x000000D2 System.Void Poses::Close()
+// 0x000000D9 System.Void Poses::Close()
 extern void Poses_Close_mB3A8AF714ECC0836483CC2AF7266FE16D7ACB743 (void);
-// 0x000000D3 System.Void Poses::Subscribe()
+// 0x000000DA System.Void Poses::Subscribe()
 extern void Poses_Subscribe_mCE90C58CFD08471938214088236E15B8AA3C87A1 (void);
-// 0x000000D4 System.Void Poses::UnSubscribe()
+// 0x000000DB System.Void Poses::UnSubscribe()
 extern void Poses_UnSubscribe_m5CF7B08DF0562A67C30B6361672BB2048F530E87 (void);
-// 0x000000D5 System.Void Poses::.ctor()
+// 0x000000DC System.Void Poses::.ctor()
 extern void Poses__ctor_m09FB7FEFE265ACD48EAB1CCA73C12B8706EE6708 (void);
-// 0x000000D6 System.Void PosesView::add_IdleEvent(System.Action)
+// 0x000000DD System.Void PosesView::add_IdleEvent(System.Action)
 extern void PosesView_add_IdleEvent_mC5AB7863BFDCF7A739DF02D545217068CE802F49 (void);
-// 0x000000D7 System.Void PosesView::remove_IdleEvent(System.Action)
+// 0x000000DE System.Void PosesView::remove_IdleEvent(System.Action)
 extern void PosesView_remove_IdleEvent_m60732CD1F05E3CACBEF8551F8425078313E3127A (void);
-// 0x000000D8 System.Void PosesView::add_KickBallEvent(System.Action)
+// 0x000000DF System.Void PosesView::add_KickBallEvent(System.Action)
 extern void PosesView_add_KickBallEvent_m321040B11FC2A88BF74A972B69D53B9BF634A62F (void);
-// 0x000000D9 System.Void PosesView::remove_KickBallEvent(System.Action)
+// 0x000000E0 System.Void PosesView::remove_KickBallEvent(System.Action)
 extern void PosesView_remove_KickBallEvent_m1757672AEA4B8A9BB8794346E0F397A5E04F101E (void);
-// 0x000000DA System.Void PosesView::add_BallIdleEvent(System.Action)
+// 0x000000E1 System.Void PosesView::add_BallIdleEvent(System.Action)
 extern void PosesView_add_BallIdleEvent_m7A8B71AE5A522947FB1D8591BE6E152835F52879 (void);
-// 0x000000DB System.Void PosesView::remove_BallIdleEvent(System.Action)
+// 0x000000E2 System.Void PosesView::remove_BallIdleEvent(System.Action)
 extern void PosesView_remove_BallIdleEvent_m2ED7822A688023031BA1502B7021E32CDA73B27C (void);
-// 0x000000DC System.Void PosesView::add_BallWaitEvent(System.Action)
+// 0x000000E3 System.Void PosesView::add_BallWaitEvent(System.Action)
 extern void PosesView_add_BallWaitEvent_mF8EEE5E3F02146A08B3652D6A92E92E0E67CD859 (void);
-// 0x000000DD System.Void PosesView::remove_BallWaitEvent(System.Action)
+// 0x000000E4 System.Void PosesView::remove_BallWaitEvent(System.Action)
 extern void PosesView_remove_BallWaitEvent_m6510CF421805959A9CE2B71C7FE34E37EEB1AFF1 (void);
-// 0x000000DE System.Void PosesView::Initialize()
+// 0x000000E5 System.Void PosesView::Initialize()
 extern void PosesView_Initialize_mDB15DAD204065092818E9D18365E45E761BF06F1 (void);
-// 0x000000DF System.Void PosesView::OnIdle()
+// 0x000000E6 System.Void PosesView::OnIdle()
 extern void PosesView_OnIdle_mF1C1C45F354494D458AF2AD9D97DB4A0BA262D21 (void);
-// 0x000000E0 System.Void PosesView::OnKickBall()
+// 0x000000E7 System.Void PosesView::OnKickBall()
 extern void PosesView_OnKickBall_mD47F0B62421F7DEA16CF9A01EF6F9B2C5A74FBC2 (void);
-// 0x000000E1 System.Void PosesView::OnBallIdle()
+// 0x000000E8 System.Void PosesView::OnBallIdle()
 extern void PosesView_OnBallIdle_m07FF4E86940F8A15D2166ACCD85C2CD0A5BD0C6B (void);
-// 0x000000E2 System.Void PosesView::OnBallWaiting()
+// 0x000000E9 System.Void PosesView::OnBallWaiting()
 extern void PosesView_OnBallWaiting_mD6A7C69F4879BF658918D5E398BB8DD7D6CEFBE1 (void);
-// 0x000000E3 System.Void PosesView::.ctor()
+// 0x000000EA System.Void PosesView::.ctor()
 extern void PosesView__ctor_m570C2E417FB54559BEEB561E1FF5877EF8FE8C17 (void);
-// 0x000000E4 System.Void Temp::Start()
+// 0x000000EB System.Void Temp::Start()
 extern void Temp_Start_m1CDF0CF69A2655EDB98ED3E79B12B8D2FC24B311 (void);
-// 0x000000E5 System.Void Temp::Update()
+// 0x000000EC System.Void Temp::Update()
 extern void Temp_Update_m845155B067812A9321000AED1AD63292CDE130EA (void);
-// 0x000000E6 System.Void Temp::.ctor()
+// 0x000000ED System.Void Temp::.ctor()
 extern void Temp__ctor_mB1BDC11EB0CA9FE4BAA0B41FE47C18970A21EB99 (void);
-// 0x000000E7 System.Void View::Close()
+// 0x000000EE System.Void View::Close()
 extern void View_Close_m4B0BF364A1E4426D42DD1B1A91A170D7969F4166 (void);
-// 0x000000E8 System.Void View::Open()
+// 0x000000EF System.Void View::Open()
 extern void View_Open_m16AF0045F7CB69CD78BAA7B5CC3802A3F8E2CFE6 (void);
-// 0x000000E9 System.Void View::.ctor()
+// 0x000000F0 System.Void View::.ctor()
 extern void View__ctor_m38D8F677C3FA009785C3E344FBBA6BD79D5AABB1 (void);
-// 0x000000EA System.Void ViewOperator`1::CreateView()
-// 0x000000EB System.Void ViewOperator`1::CreateViewClosed()
-// 0x000000EC System.Void ViewOperator`1::DestroyView()
-// 0x000000ED System.Void ViewOperator`1::.ctor()
-static Il2CppMethodPointer s_methodPointers[237] = 
+// 0x000000F1 System.Void ViewOperator`1::CreateView()
+// 0x000000F2 System.Void ViewOperator`1::CreateViewClosed()
+// 0x000000F3 System.Void ViewOperator`1::DestroyView()
+// 0x000000F4 System.Void ViewOperator`1::.ctor()
+static Il2CppMethodPointer s_methodPointers[244] = 
 {
 	AnchorCreator_get_AnchorPrefab_mBBAF7805E9D9F8D79408EE642D153BC76306B25A,
 	AnchorCreator_set_AnchorPrefab_m53CC9CC3022C713826B44536B48B462C8A1FACFF,
@@ -570,32 +583,38 @@ static Il2CppMethodPointer s_methodPointers[237] =
 	EntryPenalty_Awake_mA331BA1FDB9487D5FEC5C3E1B08E89161B99F19C,
 	EntryPenalty_SetPositionObject_m01EA5A7751650316BB75949436BE9439D9D4F6C0,
 	EntryPenalty_OnUpButton_m111302C342E4D6ABA01A8227D2DF89904A8FD7D1,
-	EntryPenalty_TimerSpawn_mB05436BA9FDDA473EB5865C83FC86CDB235D3965,
 	EntryPenalty_Subscribe_mF77B366E29E7ADCB32CCD246902B31CAF1A8E7CB,
 	EntryPenalty_UnSubscribe_mF0CA685D10ECFA3ED436D98187F8FF1F2C9F397F,
 	EntryPenalty_OnDestroy_m445AF1C10BF4747DC45E3339DD3E4C1E827E8545,
 	EntryPenalty__ctor_m1E41995097A702A6E774B289F7D4FC477F2D0DB3,
-	U3CTimerSpawnU3Ed__10__ctor_mB8D168B5780357559847154A056376EFDDF67F6A,
-	U3CTimerSpawnU3Ed__10_System_IDisposable_Dispose_m25F9EFD7DF1D496FA66EE04A1947D177E30A6789,
-	U3CTimerSpawnU3Ed__10_MoveNext_m522025717A10ABDFA636CA112CE3FF26FC6720C2,
-	U3CTimerSpawnU3Ed__10_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m22F6578D0E4AEDBC961506584B3F9B820ACE3A47,
-	U3CTimerSpawnU3Ed__10_System_Collections_IEnumerator_Reset_m095A4311FE5985E8EBD6714E287D8A47D3DC72A1,
-	U3CTimerSpawnU3Ed__10_System_Collections_IEnumerator_get_Current_mB6F166FED4AF9FDD0FF8B1A05364D8488FD0B496,
+	NULL,
 	NULL,
 	Factory__ctor_m8A868830FC6D7FCB905746BFF6A02B86AD9DAB72,
+	Gate_add_MoveKickEvent_mD19D7593D4C99442717FCBAA3BC3E9F00CC97B85,
+	Gate_remove_MoveKickEvent_m74F50315067B95C22BD3E392C810F09D95487114,
+	Gate_Initialize_m18F92661CBE44FCB559F0F253D0E7F2DF750EC17,
 	Gate_Open_m8560EA456C23282665CF929CA02910F86D5EF4E0,
+	Gate_SpawnBall_m5A6D93A80B428C4E10BF1006D06C447AA4A35FAD,
 	Gate_Close_mD3E1D92903A0FBBB178B6E41C20EE54E09CC79C8,
 	Gate_SetPositionObject_m837C43489A80E614C6EE0C1F21F52525281136CC,
 	Gate_MoveKick_mF3881AC4F500B94EBBFBA42867AE4D119FB17F54,
+	Gate_Subscribe_mFE0BB07C80EA1730D2C97DBCEB8E3EB3B75957A4,
+	Gate_UnSubscribe_m7F1563C30A4D529ADD42EA676BCF4175F8095C61,
 	Gate__ctor_mBB516EAB7D58B67AAF84182A16CE9B6E4057546C,
+	GateView_add_GetBallEvent_m0AE31E8FF82FEECF666FF062808681207256E538,
+	GateView_remove_GetBallEvent_m8B838F6B34FC1FBB338D946011226601977DA04E,
+	GateView_GetParentBall_mA64C5A76C56C9E11FD70ABCD7683AC74367865B7,
 	GateView_MoveKick_m8B11EEFF2EA24F5E62D4844B30D7E6BE47BEA80A,
+	GateView_TimerSpawn_m4907ECFE904B14861BAE09A9243BE56864127692,
 	GateView__ctor_m06B1AF07332136D21FC6CE65CD8FCFE574584CA1,
+	U3CTimerSpawnU3Ed__8__ctor_m745EA1D38A4FA4C106A7092EE6940BAE070D7176,
+	U3CTimerSpawnU3Ed__8_System_IDisposable_Dispose_mA1194395FD28B924DEA24DD48266FAF9569BC2D7,
+	U3CTimerSpawnU3Ed__8_MoveNext_m9665579A7C6BE4812039CA45C86C1CA763FC7A89,
+	U3CTimerSpawnU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m99149A08F5C34C29CF547E3F45C1C033B3CB06CB,
+	U3CTimerSpawnU3Ed__8_System_Collections_IEnumerator_Reset_m65648F07715074ADE8B47539B015F83754147C46,
+	U3CTimerSpawnU3Ed__8_System_Collections_IEnumerator_get_Current_mF938CFE70C20B6F0CDE46ED9385CEC7CFCC05F9D,
 	Kicker_add_UpButtonEvent_m2E8515D4118B37CE8BDE952B07327E0B61D36180,
 	Kicker_remove_UpButtonEvent_m92319B8EF62B7759411BEFFADA1228F8A37C0141,
-	Kicker_add_DownButtonEvent_m7F71D5C936B6791AFE1CBE2B4D97A95CA7E0C55C,
-	Kicker_remove_DownButtonEvent_m849007D332025678402CDAF5AE89DCAA56F26C59,
-	Kicker_add_MoveMouseEvent_mFCFEBDF51090DD0F6C47A7E527244B65CF645D31,
-	Kicker_remove_MoveMouseEvent_mAB8311E5F72433FC9F7A2E08233D1B3618FFD12E,
 	Kicker_Initialize_m8E3E08608F3F613A5B301FAA46CE9319AA11A213,
 	Kicker_OnUpButton_m64840AAD2DB9B9132C331E4B8C7B8CAA3DEFAC53,
 	Kicker_MoveMouse_m6B7D98FE6D9020119D9B03A9AA5856DFF11ABBE5,
@@ -605,6 +624,7 @@ static Il2CppMethodPointer s_methodPointers[237] =
 	Kicker__ctor_mC091E8FCF5C521DAFDDCDA96C02A46F957453BB7,
 	PlayerPenalty_MoveKick_m70837C1B9E8886D2D845AB7E7B0B9C7D6090A51C,
 	PlayerPenalty__ctor_m05C148ED9D9E7C8D6FC000032738E12E888CDCC2,
+	SpawnerBall_SetParentBall_m5184D65976DE9A6A4330F945F46386249A2C50B6,
 	SpawnerBall_GetBall_m299390D2FC823B74356106045DBA8B0816088C95,
 	SpawnerBall__ctor_m5EDCFD9610DCD78677463D6B2CE820A8099FF131,
 	ARContent_GetARRaycastManager_m9CE2049015051FF4DFC490F411C8B981B9D2147D,
@@ -659,7 +679,7 @@ static Il2CppMethodPointer s_methodPointers[237] =
 	FinderTargetView_Initialize_m1812BEB1B12CB4F4020F2861380719EF7FF1473B,
 	FinderTargetView_Update_m7A53B2DA4F5ECB8FD2F04F819C084FD46EDB627F,
 	FinderTargetView_ShowMarker_mC05BC9BD38113AF82241CEDB02452818D7031E41,
-	FinderTargetView_CheckTouch_m8CB7CA7EC53670FF5F5819B2888F5B88043027F1,
+	FinderTargetView_CheckTouch_mC6C962AC4E9CC293C3C80E0B62151A9029CD238D,
 	FinderTargetView__ctor_mA5E60C95EABD4C42607D7061CFC373BCB3614C72,
 	Player_Open_m85788575E3B7F9DEEA40C7D3BC4EB01AE7C313BF,
 	Player_Close_mDC429744B019DE65474083DA954EFB0A55ACFEBE,
@@ -738,259 +758,269 @@ static Il2CppTokenAdjustorThunkPair s_adjustorThunks[8] =
 	{ 0x06000029, MouseControlActions_get_enabled_mD2EF280BA8206BDC5123EFDEAD29D4071CC5E36B_AdjustorThunk },
 	{ 0x0600002B, MouseControlActions_SetCallbacks_mF5D8CF76CEB313096ACAD2579ABE430477147915_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[237] = 
+static const int32_t s_InvokerIndices[244] = 
 {
-	5344,
-	4344,
-	5451,
-	5451,
-	5451,
-	5451,
-	8565,
-	5386,
-	4378,
-	5451,
-	5451,
-	5451,
-	4230,
-	4344,
-	5451,
-	8565,
-	5344,
-	5451,
-	5451,
-	5147,
-	4138,
-	5142,
-	4133,
-	5161,
-	3010,
-	5344,
-	5344,
-	5451,
-	5451,
-	5344,
+	5345,
+	4345,
+	5452,
+	5452,
+	5452,
+	5452,
+	8566,
+	5387,
+	4379,
+	5452,
+	5452,
+	5452,
+	4231,
+	4345,
+	5452,
+	8566,
+	5345,
+	5452,
+	5452,
+	5148,
+	4139,
+	5143,
+	4134,
+	5162,
+	3011,
+	5345,
+	5345,
+	5452,
+	5452,
+	5345,
 	1726,
 	1530,
-	5483,
-	5305,
-	4344,
-	5344,
-	5344,
-	5344,
-	5451,
-	5451,
-	5255,
-	8213,
-	4344,
+	5484,
+	5306,
+	4345,
+	5345,
+	5345,
+	5345,
+	5452,
+	5452,
+	5256,
+	8214,
+	4345,
 	0,
 	0,
-	4344,
-	4344,
-	4344,
-	4344,
-	4344,
-	4344,
-	5451,
-	5451,
-	5451,
-	5451,
-	4484,
-	4484,
-	4484,
-	5451,
-	5451,
-	5451,
-	5451,
-	5451,
-	4344,
-	4344,
-	5451,
-	5451,
-	5451,
-	5451,
-	5451,
-	5451,
-	5451,
-	5451,
-	2381,
-	5344,
-	5451,
-	5451,
-	4318,
-	5451,
-	5255,
-	5344,
-	5451,
-	5344,
-	2381,
-	4344,
-	5451,
-	5451,
-	4428,
-	2381,
-	5344,
-	5451,
-	5451,
-	5451,
-	5451,
-	4318,
-	5451,
-	5255,
-	5344,
-	5451,
-	5344,
+	4345,
+	4345,
+	4345,
+	4345,
+	4345,
+	4345,
+	5452,
+	5452,
+	5452,
+	5452,
+	4485,
+	4485,
+	4485,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	4345,
+	4345,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	2382,
+	5345,
+	5452,
+	5452,
+	4319,
+	5452,
+	5256,
+	5345,
+	5452,
+	5345,
+	2382,
+	4345,
+	5452,
+	5452,
+	4429,
+	2382,
+	5452,
+	5452,
+	5452,
+	5452,
 	0,
-	5451,
-	5451,
-	5451,
-	4428,
-	2381,
-	5451,
-	2381,
-	5451,
-	4344,
-	4344,
-	4344,
-	4344,
-	4344,
-	4344,
-	5451,
-	5451,
-	4426,
-	5451,
-	5451,
-	5451,
-	5451,
-	2381,
-	5451,
-	5344,
-	5451,
-	5344,
-	5451,
-	5451,
-	5451,
-	5344,
-	5451,
-	5451,
-	5451,
-	5451,
-	5451,
-	5451,
+	0,
+	5452,
+	4345,
+	4345,
+	5452,
+	5452,
+	5452,
+	5452,
+	4429,
+	2382,
+	5452,
+	5452,
+	5452,
+	4345,
+	4345,
+	5345,
+	2382,
+	5345,
+	5452,
+	4319,
+	5452,
+	5256,
+	5345,
+	5452,
+	5345,
+	4345,
+	4345,
+	5452,
+	5452,
+	4427,
+	5452,
+	5452,
+	5452,
+	5452,
+	2382,
+	5452,
+	4345,
+	5345,
+	5452,
+	5345,
+	5452,
+	5452,
+	5452,
+	5345,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
 	1173,
-	5451,
-	5451,
-	5451,
-	5451,
-	5451,
-	4428,
-	5451,
-	5451,
-	5451,
-	5451,
-	5451,
-	5451,
-	5451,
-	5451,
-	5451,
-	5451,
-	5451,
-	4318,
-	5451,
-	5451,
-	4428,
-	5451,
-	5451,
-	5451,
-	5451,
-	4344,
-	4344,
-	4344,
-	5451,
-	5451,
-	4428,
-	5451,
-	5451,
-	5451,
-	4344,
-	4344,
-	4344,
-	5451,
-	5451,
-	5451,
-	4344,
-	5451,
-	5451,
-	5451,
-	4428,
-	5451,
-	5451,
-	5451,
-	5451,
-	5451,
-	5451,
-	5451,
-	5451,
-	5451,
-	5451,
-	2308,
-	5451,
-	4344,
-	4344,
-	4344,
-	4344,
-	4344,
-	4344,
-	4344,
-	4344,
-	5451,
-	5451,
-	5451,
-	5451,
-	5451,
-	5451,
-	5451,
-	5451,
-	5451,
-	5451,
-	4344,
-	4344,
-	4344,
-	4344,
-	4344,
-	4344,
-	4344,
-	4344,
-	5451,
-	5451,
-	5451,
-	5451,
-	5451,
-	5451,
-	5451,
-	5451,
-	5451,
-	5451,
-	5451,
-	5451,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	4429,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	4319,
+	5452,
+	5452,
+	4429,
+	5452,
+	5452,
+	5452,
+	5452,
+	4345,
+	4345,
+	4345,
+	5452,
+	5452,
+	4429,
+	5452,
+	5452,
+	5452,
+	4345,
+	4345,
+	4345,
+	5452,
+	5452,
+	5452,
+	4429,
+	5452,
+	5452,
+	5452,
+	4429,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	2309,
+	5452,
+	4345,
+	4345,
+	4345,
+	4345,
+	4345,
+	4345,
+	4345,
+	4345,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	4345,
+	4345,
+	4345,
+	4345,
+	4345,
+	4345,
+	4345,
+	4345,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
+	5452,
 	0,
 	0,
 	0,
 	0,
 };
-static const Il2CppTokenRangePair s_rgctxIndices[2] = 
+static const Il2CppTokenRangePair s_rgctxIndices[3] = 
 {
-	{ 0x02000024, { 1, 4 } },
-	{ 0x06000065, { 0, 1 } },
+	{ 0x02000024, { 2, 4 } },
+	{ 0x0600005E, { 0, 1 } },
+	{ 0x0600005F, { 1, 1 } },
 };
 extern const uint32_t g_rgctx_T_tAA4DD94B757657C4D6DB902E0924F82FDE33C6FF;
+extern const uint32_t g_rgctx_T_t872C478C0E0E7DB5B71CE1CDC6E3E29E63DD647A;
 extern const uint32_t g_rgctx_Object_Instantiate_TisTPrefab_t0CBFBD806F7B5F6F648F56F70EBA23589C7BB716_mC8287B95DDDB0E19860C165AD6A4E7EA8604CAFD;
 extern const uint32_t g_rgctx_ViewOperator_1_t156A1978F7FDAAAE9C2C5525157EED1364F6516E;
 extern const uint32_t g_rgctx_ViewOperator_1_CreateView_m7B442998F77BE9C5BB3D930E87A416E12D6AA657;
 extern const uint32_t g_rgctx_TPrefab_t0CBFBD806F7B5F6F648F56F70EBA23589C7BB716;
-static const Il2CppRGCTXDefinition s_rgctxValues[5] = 
+static const Il2CppRGCTXDefinition s_rgctxValues[6] = 
 {
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_T_tAA4DD94B757657C4D6DB902E0924F82FDE33C6FF },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_T_t872C478C0E0E7DB5B71CE1CDC6E3E29E63DD647A },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Object_Instantiate_TisTPrefab_t0CBFBD806F7B5F6F648F56F70EBA23589C7BB716_mC8287B95DDDB0E19860C165AD6A4E7EA8604CAFD },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ViewOperator_1_t156A1978F7FDAAAE9C2C5525157EED1364F6516E },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ViewOperator_1_CreateView_m7B442998F77BE9C5BB3D930E87A416E12D6AA657 },
@@ -1000,16 +1030,16 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	237,
+	244,
 	s_methodPointers,
 	8,
 	s_adjustorThunks,
 	s_InvokerIndices,
 	0,
 	NULL,
-	2,
+	3,
 	s_rgctxIndices,
-	5,
+	6,
 	s_rgctxValues,
 	NULL,
 	NULL, // module initializer,

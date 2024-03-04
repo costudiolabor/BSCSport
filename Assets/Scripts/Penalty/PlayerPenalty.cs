@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class PlayerPenalty : MonoBehaviour {
    [SerializeField] private Animator animator;

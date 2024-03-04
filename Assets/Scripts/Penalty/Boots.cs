@@ -3,11 +3,11 @@ using UnityEngine;
 
 public class Boots : MonoBehaviour {
     [SerializeField] private Vector2 direction;
-    [SerializeField] private float distance;
+    [SerializeField] private float distance = 1.0f;
 
     public void SetParametrs(Vector2 direction, float distance) {
         this.direction = direction;
-        this.distance = distance;
+        this.distance += distance;
     }
     private void OnTriggerEnter(Collider other) {
         bool isBall = other.TryGetComponent(out Ball ball);
