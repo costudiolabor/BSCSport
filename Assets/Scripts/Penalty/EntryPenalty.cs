@@ -22,8 +22,7 @@ public class EntryPenalty : MonoBehaviour {
         
         gate.CreateViewClosed();
         gate.Initialize();
-        
-        kicker.Initialize();
+      
         Subscribe();
     }
 
@@ -35,8 +34,8 @@ public class EntryPenalty : MonoBehaviour {
         arContent.DisableARRayCastManager();
         finderTarget.Close();
         
+        kicker.Initialize();
         kicker.UpButtonEvent += OnUpButton;
-      
     }
     
     private void OnUpButton(Vector2 direction, float distance) {

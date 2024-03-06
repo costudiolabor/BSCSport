@@ -4,7 +4,6 @@ using UnityEngine;
 [Serializable]
 public class Gate : ViewOperator<GateView> {
     [SerializeField] private SpawnerBall spawnerBall;
-
     public event Action<Vector2, float> MoveKickEvent;  
     public void Initialize() {
         Transform parentBall = view.GetParentBall();
@@ -12,25 +11,38 @@ public class Gate : ViewOperator<GateView> {
         Subscribe();
     }
 
-    public void Open() {
-        view.Open();
-        SpawnBall();
-    }
-
-    private void SpawnBall() {
-        spawnerBall.GetBall();
-        MoveKickEvent += view.MoveKick;
-    }
-    
-    public void Close() => view.Close();
     public void SetPositionObject(Vector3 position) {
         view.transform.position = position;
         Debug.Log("PositionObject " + position);
     }
+
+    public void Open() {
+        view.Open();
+        view.Initialize();
+        SpawnBall();
+        OnSpawnBall();
+    }
+
+    private void SpawnBall() {
+        spawnerBall.GetBall();
+        view.IdleEvent += OnSpawnBall;
+    }
+
+    private void OnSpawnBall() {
+        MoveKickEvent += OnMoveKick;
+    }
+    
+    private void OnMoveKick(Vector2 direction, float distance) {
+        view.MoveKick(direction, distance);
+        MoveKickEvent -= OnMoveKick;
+        view.IdleEvent -= OnSpawnBall;
+    }
+    
+    public void Close() => view.Close();
+   
     public void MoveKick(Vector2 direction, float distance) {
         MoveKickEvent?.Invoke(direction, distance);
-        //view.MoveKick(direction, distance);
-        MoveKickEvent -= view.MoveKick;
+      
     }
     
     

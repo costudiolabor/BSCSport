@@ -562,8 +562,6 @@ struct StyleVariableContext_tF74F2787CE1F6BEBBFBFF0771CF493AC9E403527;
 struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1;
 // System.Type
 struct Type_t;
-// View
-struct View_t526E49046922A2DE1088CDD003238D91F8D37F2A;
 // UnityEngine.UIElements.VisualElement
 struct VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115;
 // UnityEngine.UIElements.VisualElementPanelActivator
@@ -5643,8 +5641,6 @@ inline bool Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB (Enume
 {
 	return ((  bool (*) (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A*, const RuntimeMethod*))Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared)(__this, method);
 }
-// System.Void View::Close()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void View_Close_m4B0BF364A1E4426D42DD1B1A91A170D7969F4166 (View_t526E49046922A2DE1088CDD003238D91F8D37F2A* __this, const RuntimeMethod* method) ;
 // UnityEngine.GameObject UnityEngine.Component::get_gameObject()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Object::Destroy(UnityEngine.Object)
@@ -7724,7 +7720,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ViewOperator_1_CreateViewClosed_mECCB128
 		// view.Close();
 		RuntimeObject* L_0 = (RuntimeObject*)__this->___view_2;
 		NullCheck((View_t526E49046922A2DE1088CDD003238D91F8D37F2A*)L_0);
-		View_Close_m4B0BF364A1E4426D42DD1B1A91A170D7969F4166((View_t526E49046922A2DE1088CDD003238D91F8D37F2A*)L_0, NULL);
+		VirtualActionInvoker0::Invoke(4 /* System.Void View::Close() */, (View_t526E49046922A2DE1088CDD003238D91F8D37F2A*)L_0);
 		// }
 		return;
 	}
